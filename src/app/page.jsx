@@ -8,6 +8,7 @@ import {
   getDoc,
   setDoc,
   updateDoc,
+  getDocs,
 } from "firebase/firestore";
 
 const firebaseApp = initializeApp({
