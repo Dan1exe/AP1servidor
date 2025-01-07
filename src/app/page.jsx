@@ -48,17 +48,6 @@ const Page = () => {
     }
   }
 
-  useEffect(() => {
-    const getInfos = async () => {
-      try {
-        const data = await getDocs(infoCollectionRef);
-        console.log(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-      } catch (error) {
-        console.error("Erro ao buscar dados:", error);
-      }
-    };
-    getInfos();
-  }, []);
 
   return (
     <>
